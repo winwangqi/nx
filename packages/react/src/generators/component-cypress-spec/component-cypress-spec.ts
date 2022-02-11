@@ -1,16 +1,16 @@
 import {
-  getComponentName,
-  getComponentPropsInterface,
-} from '../../utils/ast-utils';
-
-import * as ts from 'typescript';
-import {
   convertNxGenerator,
   generateFiles,
   getProjects,
   joinPathFragments,
   Tree,
 } from '@nrwl/devkit';
+
+import * as ts from 'typescript';
+import {
+  getComponentName,
+  getComponentPropsInterface,
+} from '../../utils/ast-utils';
 
 export interface CreateComponentSpecFileSchema {
   project: string;

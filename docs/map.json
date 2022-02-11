@@ -818,6 +818,16 @@
             "name": "cypress-project generator",
             "id": "cypress-project",
             "path": "/packages/cypress/generators/cypress-project"
+          },
+          {
+            "name": "cypress-component-project generator",
+            "id": "cypress-component-project",
+            "path": "/packages/cypress/generators/cypress-component-project"
+          },
+          {
+            "name": "convert-to-cypress-ten",
+            "id": "convert-cypress-ten",
+            "path": "/packages/cypress/generators/convert-cypress-ten"
           }
         ]
       },

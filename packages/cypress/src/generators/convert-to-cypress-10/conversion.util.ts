@@ -49,6 +49,7 @@ export function updateProject(tree: Tree, options: CypressConvertOptions) {
     projectConfig.targets[target].options = {
       ...projectConfig.targets[target].options,
       cypressConfig: cypressConfigPathTs,
+      testingType: 'e2e',
     };
 
     updateProjectConfiguration(tree, options.project, projectConfig);

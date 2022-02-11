@@ -54,7 +54,7 @@ export async function convertCypressProject(
 
   // TODO(caleb): only do this if a project was updated
   updateJson(tree, 'package.json', (json) => {
-    json.devDependencies['cypress'] = TMP_CYPRESS_VERSION;
+    json.devDependencies['cypress'] = cypressVersion;
     return json;
   });
 

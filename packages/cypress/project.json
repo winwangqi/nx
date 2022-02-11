@@ -9,7 +9,9 @@
         "jestConfig": "packages/cypress/jest.config.js",
         "passWithNoTests": true
       },
-      "outputs": ["coverage/packages/cypress"]
+      "outputs": [
+        "coverage/packages/cypress"
+      ]
     },
     "build-base": {
       "executor": "@nrwl/js:tsc",
@@ -32,13 +34,18 @@
           {
             "input": "packages/cypress",
             "glob": "**/*.json",
-            "ignore": ["**/tsconfig*.json", "project.json"],
+            "ignore": [
+              "**/tsconfig*.json",
+              "project.json"
+            ],
             "output": "/"
           },
           {
             "input": "packages/cypress",
             "glob": "**/*.js",
-            "ignore": ["**/jest.config.js"],
+            "ignore": [
+              "**/jest.config.js"
+            ],
             "output": "/"
           },
           {
@@ -50,14 +57,23 @@
             "input": "",
             "glob": "LICENSE",
             "output": "/"
+          },
+          {
+            "input": "packages/cypress",
+            "glob": "plugins/**/*.html",
+            "output": "/"
           }
         ]
       },
-      "outputs": ["{options.outputPath}"]
+      "outputs": [
+        "{options.outputPath}"
+      ]
     },
     "build": {
       "executor": "@nrwl/workspace:run-commands",
-      "outputs": ["build/packages/cypress"],
+      "outputs": [
+        "build/packages/cypress"
+      ],
       "options": {
         "command": "node ./scripts/copy-readme.js cypress"
       }
@@ -76,7 +92,9 @@
           "packages/cypress/**/generators/**/schema.json"
         ]
       },
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     }
   }
 }
