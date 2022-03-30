@@ -1,20 +1,21 @@
-import * as path from 'path';
 import {
   checkFilesExist,
+  cleanupProject,
+  createFile,
   fileExists,
   isNotWindows,
   isWindows,
   newProject,
   readFile,
   readJson,
-  cleanupProject,
   runCLI,
   runCLIAsync,
+  runCommand,
   uniq,
   updateFile,
-  runCommand,
 } from '@nrwl/e2e/utils';
 import { classify } from '@nrwl/workspace/src/utils/strings';
+import * as path from 'path';
 
 let proj: string;
 
@@ -481,8 +482,26 @@ describe('Move Angular Project', () => {
       `generate @nrwl/angular:move --projectName=${app1}-e2e --destination=${newPath}-e2e`
     );
 
+    // TODO(caleb): remove this once <v10 cypress is deprecated
+    //  create json file for tests, but new workspaces will use cypress.config.ts
+    //  only workspaces who haven't upgraded to v10 will use cypress.json
     // just check that the cypress.json is updated correctly
     const cypressJsonPath = `apps/${newPath}-e2e/cypress.json`;
+    createFile(
+      cypressJsonPath,
+      `
+    {
+        "fileServerFolder": ".",
+        "fixturesFolder": "./src/fixtures",
+        "integrationFolder": "./src/integration",
+        "pluginsFile": false,
+        "supportFile": false,
+        "video": true,
+        "videosFolder": "../../dist/cypress/apps/${app1}-e2e/videos",
+        "screenshotsFolder": "../../dist/cypress/apps/${app1}-e2e/screenshots",
+        "chromeWebSecurity": false
+      }`
+    );
     expect(moveOutput).toContain(`CREATE ${cypressJsonPath}`);
     checkFilesExist(cypressJsonPath);
     const cypressJson = readJson(cypressJsonPath);

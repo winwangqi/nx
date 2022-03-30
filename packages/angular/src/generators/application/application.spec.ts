@@ -103,7 +103,7 @@ describe('app', () => {
       );
       expect(eslintrcJson.extends).toEqual(['../../.eslintrc.json']);
 
-      expect(appTree.exists('apps/my-app-e2e/cypress.json')).toBeTruthy();
+      expect(appTree.exists('apps/my-app-e2e/cypress.config.ts')).toBeTruthy();
       const tsconfigE2E = parseJson(
         appTree.read('apps/my-app-e2e/tsconfig.json', 'utf-8')
       );
@@ -253,7 +253,7 @@ describe('app', () => {
         'apps/my-dir/my-app/src/main.ts',
         'apps/my-dir/my-app/src/app/app.module.ts',
         'apps/my-dir/my-app/src/app/app.component.ts',
-        'apps/my-dir/my-app-e2e/cypress.json',
+        'apps/my-dir/my-app-e2e/cypress.config.ts',
       ].forEach((path) => {
         expect(appTree.exists(path)).toBeTruthy();
       });
@@ -336,7 +336,7 @@ describe('app', () => {
         'my-dir/my-app/src/main.ts',
         'my-dir/my-app/src/app/app.module.ts',
         'my-dir/my-app/src/app/app.component.ts',
-        'my-dir/my-app-e2e/cypress.json',
+        'my-dir/my-app-e2e/cypress.config.ts',
       ].forEach((path) => {
         expect(appTree.exists(path)).toBeTruthy();
       });
