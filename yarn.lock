@@ -8889,9 +8889,9 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-"cypress@https://cdn.cypress.io/beta/npm/10.0.0/darwin-x64/10.0-release-8765e6481bbc3b8247bd6f64139b8d3676d84c89/cypress.tgz":
+"cypress@https://cdn.cypress.io/beta/npm/10.0.0/darwin-x64/10.0-release-1d2d6a47230a2752299263f0199e1a530b16b7fc/cypress.tgz":
   version "10.0.0"
-  resolved "https://cdn.cypress.io/beta/npm/10.0.0/darwin-x64/10.0-release-8765e6481bbc3b8247bd6f64139b8d3676d84c89/cypress.tgz#47e10fa6f39d3c6b14ae559818e6039e89ecf3fd"
+  resolved "https://cdn.cypress.io/beta/npm/10.0.0/darwin-x64/10.0-release-1d2d6a47230a2752299263f0199e1a530b16b7fc/cypress.tgz#45cf7e8bea3f272c1653cfad3220c98a888755d3"
   dependencies:
     "@cypress/request" "^2.88.10"
     "@cypress/xvfb" "^1.2.4"
@@ -8925,7 +8925,7 @@ cyclist@^1.0.1:
     listr2 "^3.8.3"
     lodash "^4.17.21"
     log-symbols "^4.0.0"
-    minimist "^1.2.5"
+    minimist "^1.2.6"
     ospath "^1.2.2"
     pretty-bytes "^5.6.0"
     proxy-from-env "1.0.0"
