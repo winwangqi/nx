@@ -386,14 +386,46 @@
             "id": "generate",
             "file": "generated/cli/generate"
           },
-          { "name": "serve", "id": "serve", "file": "generated/cli/serve" },
-          { "name": "build", "id": "build", "file": "generated/cli/build" },
-          { "name": "test", "id": "test", "file": "generated/cli/test" },
-          { "name": "lint", "id": "lint", "file": "generated/cli/lint" },
-          { "name": "e2e", "id": "e2e", "file": "generated/cli/e2e" },
-          { "name": "run", "id": "run", "file": "generated/cli/run" },
-          { "name": "daemon", "id": "daemon", "file": "generated/cli/daemon" },
-          { "name": "graph", "id": "dep-graph", "file": "generated/cli/graph" },
+          {
+            "name": "serve",
+            "id": "serve",
+            "file": "generated/cli/serve"
+          },
+          {
+            "name": "build",
+            "id": "build",
+            "file": "generated/cli/build"
+          },
+          {
+            "name": "test",
+            "id": "test",
+            "file": "generated/cli/test"
+          },
+          {
+            "name": "lint",
+            "id": "lint",
+            "file": "generated/cli/lint"
+          },
+          {
+            "name": "e2e",
+            "id": "e2e",
+            "file": "generated/cli/e2e"
+          },
+          {
+            "name": "run",
+            "id": "run",
+            "file": "generated/cli/run"
+          },
+          {
+            "name": "daemon",
+            "id": "daemon",
+            "file": "generated/cli/daemon"
+          },
+          {
+            "name": "graph",
+            "id": "dep-graph",
+            "file": "generated/cli/graph"
+          },
           {
             "name": "run-many",
             "id": "run-many",
@@ -439,8 +471,16 @@
             "id": "migrate",
             "file": "generated/cli/migrate"
           },
-          { "name": "report", "id": "report", "file": "generated/cli/report" },
-          { "name": "list", "id": "list", "file": "generated/cli/list" },
+          {
+            "name": "report",
+            "id": "report",
+            "file": "generated/cli/report"
+          },
+          {
+            "name": "list",
+            "id": "list",
+            "file": "generated/cli/list"
+          },
           {
             "name": "workspace-lint",
             "id": "workspace-lint",
@@ -456,7 +496,11 @@
             "id": "connect-to-nx-cloud",
             "file": "generated/cli/connect-to-nx-cloud"
           },
-          { "name": "reset", "id": "reset", "file": "generated/cli/reset" }
+          {
+            "name": "reset",
+            "id": "reset",
+            "file": "generated/cli/reset"
+          }
         ]
       },
       {
@@ -808,6 +852,11 @@
             "id": "overview",
             "name": "Overview",
             "file": "shared/cypress-plugin"
+          },
+          {
+            "id": "cypress-v10-migration",
+            "name": "Cypress v10 Migration",
+            "file": "shared/guides/cypress/cypress-v10-migration"
           },
           {
             "name": "cypress executor",
